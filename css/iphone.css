@@ -1,0 +1,22 @@
+#navbar{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Home section */
+#home{
+    flex-direction: column;
+    height: 508px;
+    padding: 3px 28px;
+}
+#home::before {
+     
+    height: 480px;
+    width: 144%;
+}
+#home p{
+    font-size: 13px;
+}

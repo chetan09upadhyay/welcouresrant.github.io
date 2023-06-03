@@ -1,0 +1,193 @@
+/* Navigation */
+#navbar{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position:relative;
+}
+
+
+ 
+ 
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 8px 9px;
+    font-size: 7px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#search {
+    width: 64px;
+    margin-left: 11px;
+    border: 2px solid black;
+    height: 3px;
+}
+.btn4 {
+    font-size: 11px;
+    background: blue;
+}
+
+#logo h1 {
+    font-size: 25px;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 521px;
+    padding: 3px 28px;
+}
+#home::before {
+     
+    height: 480px;
+}
+#home p{
+    font-size: 13px;
+}
+
+/* service-section */
+#service{
+    flex-direction: column;
+    
+}
+#service .box{
+    padding:14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+
+/* Pricsing */
+ 
+#pricsing{
+    flex-direction: column;
+    
+}
+
+#pricsing .box {
+    /* border: 2px solid brown; */
+    padding: 12px;
+    margin: 7px 6px;
+    width: 100%;
+    border-radius: 23px;
+    background-color: rgb(209, 207, 207);
+    
+}
+
+#pricsing .box h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+#pricsing .box h4 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: -2px 2px darkgrey;
+}
+
+#pricsing .box li {
+    list-style: none;
+    font-size: 13px;
+    text-align: center;
+    margin: 12px;
+}
+
+#service .box p {
+    font-size: 12px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+#service .box img {
+    height: 130px;
+    width: 130px;
+    display: block;
+    margin: auto;
+}
+
+#service-container {
+    margin-top: 125px;
+}
+
+/* client-section */
+ 
+
+#clients{
+    flex-direction: column;
+    flex-wrap: column;
+}
+ 
+#clients .box {
+     
+    padding: 12px;
+    margin: 7px 6px;
+    width: 100%;
+    border-radius: 23px;
+    background-color: rgb(209, 207, 207);
+    
+}
+
+ 
+
+#clients .box img {
+    height: 130px;
+    width: 130px;
+    display: block;
+    margin: auto;
+}
+
+/* vedio section */
+ 
+#vedio{
+    flex-direction: column;
+    flex-wrap: column;
+}
+
+#vedio .box{
+    padding: 12px;
+    margin: 7px 6px;
+    width: 100%;
+    border-radius: 23px;
+}
+
+#vedio .box1 {
+    border: 2px solid #383232;
+    border-radius: 23px;
+    width: 207px;
+    /* margin: 3px 66px; */
+}
+
+ 
+ 
+/* Contact us service  */
+#contect-box{
+    padding-bottom: 77px;
+}
+
+#contact-box label {
+    font-size: 12px;
+     
+}
+
+.deliver h1 {
+    padding: 10px;
+    font-size: 17px;
+}
+
+/* Footer  */
+/* Utility class */
+.h-primary {
+    font-size: 18px;
+}
+
+.btn {
+    font-size: 13px;
+    padding: 4px 8px;
+    margin: 5px 29px;
+}
+
+footer #center{
+    font-size: 8px;
+}

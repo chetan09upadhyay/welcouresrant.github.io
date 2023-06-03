@@ -1,0 +1,812 @@
+ 
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+.loader {
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+.loader > span {
+  display: inline-block;
+  color: #fff;
+  transform-style: preserve-3d;
+  transform-origin: 0 100%;
+  animation: anim 3s infinite linear;
+}
+.loader > span:nth-child(even) {
+  color: #00ed64;
+}
+.loader > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.loader > span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.loader > span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.loader > span:nth-child(6) {
+  animation-delay: 1s;
+}
+.loader > span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.loader > span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.loader > span:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.loader > span:nth-child(10) {
+  animation-delay: 1.8s;
+}
+.loader > span:nth-child(11) {
+  animation-delay: 2s;
+}
+.loader > span:nth-child(12) {
+  animation-delay: 2.2s;
+}
+.loader > span:nth-child(13) {
+  animation-delay: 2.4s;
+}
+.loader > span:nth-child(14) {
+  animation-delay: 2.6s;
+}
+@keyframes anim {
+  35% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+/* reset css */
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: clip;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-style: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Navigation bar: logo and image */
+
+ 
+#logo {
+    margin: 10px 14px;
+    padding: 0% 7px;
+    /* width: 464px; */
+}
+
+h1 {
+    font-size: 18px;
+    font-family: Courgette, cursive;
+    font-weight: bold;
+    animation: 2s linear 0s infinite normal none running color;
+}
+
+ 
+  @keyframes cursor {
+      0%, 100% { 
+      border-color: #212121; 
+    }
+  }
+  
+  @keyframes text {
+      0% { 
+      width: 0; 
+    }
+      100% { 
+      width: 21.5ch; 
+    }
+  }
+/* /* for button animation colr changer  */
+@keyframes color {
+    0% {
+        color: orange
+    }
+
+    10% {
+        color: red
+    }
+
+    20% {
+        color: blue
+    }
+
+    30% {
+        color: blueviolet
+    }
+
+    40% {
+        color: greenyellow
+    }
+
+    50% {
+        color: navajowhite
+    }
+
+    60% {
+        color: palevioletred
+    }
+
+    70% {
+        color: pink
+    }
+
+    80% {
+        color: rgb(150, 109, 32)
+    }
+
+    90% {
+        color: rgb(0, 94, 255)
+    }
+
+    100% {
+        color: rgb(255, 0, 72)
+    }
+
+    
+         
+     
+
+} 
+
+
+
+
+
+.btn1 {
+    padding: 0px 20px;
+    /* border: 2px solid white; */
+    color: #c3b8b8;
+    background-color: #2a2ba5;
+    margin: 0px 24px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+}
+
+/*Navigation bar:  list items */
+
+
+#navbar ul {
+    display: flex;
+
+
+}
+
+/* Before and after pseudo selector it is very important*/
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+    margin: -4px;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+ 
+.btn4 {
+    padding: 4px 17px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    background: transparent;
+    vertical-align: middle;
+}
+
+.btn4:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+
+
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    margin: 0px 12px;
+    height: 10px;
+    width: auto;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+#search:hover {
+     color:white;
+     background-color: black;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 580px;
+    padding: 23px 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ 
+
+.scroll-text {
+    text-align: right;
+
+     /* animation properties  */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(-100%);
+    }
+
+    to {
+        -moz-transform: translateX(100%);
+    }
+}
+
+/* for Chrome*/
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    to {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+} */
+
+/* Before  pseudo selector */
+/* #home::before {
+    content: "";
+    background:url('img/bg.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+} */
+
+
+#home h1 {
+    text-align: center;
+    font-family: monospace;
+    animation: color 2s infinite linear;
+}
+
+/* for button animation colr changer */
+@keyframes color {
+    0% {
+        color: orange
+    }
+
+    10% {
+        color: red
+    }
+
+    20% {
+        color: blue
+    }
+
+    30% {
+        color: blueviolet
+    }
+
+    40% {
+        color: greenyellow
+    }
+
+    50% {
+        color: navajowhite
+    }
+
+    60% {
+        color: palevioletred
+    }
+
+    70% {
+        color: pink
+    }
+
+    80% {
+        color: rgb(150, 109, 32)
+    }
+
+    90% {
+        color: rgb(0, 94, 255)
+    }
+
+    100% {
+        color: rgb(255, 0, 72)
+    }
+
+
+} 
+
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* Service section */
+#service {
+    margin: 0px;
+    display: flex;
+
+}
+
+#service .box {
+
+    /* border: 2px solid brown; */
+    padding: 12px;
+    margin: 7px 6px;
+    border-radius: 23px;
+    background-color: rgb(209, 207, 207);
+    /* margin-bottom: 20px; */
+}
+
+#service .box img {
+    height: 156px;
+    display: block;
+    margin: auto;
+
+}
+
+#service .box img:hover {
+    height: 300px;
+
+}
+
+#service .box p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#service-container {
+    margin-top: 164px;
+}
+
+#btn1 {
+    display:hidden;
+
+}
+
+/* client  section */
+#client-section {
+    /*height: 344px;  */
+    position: relative;
+}
+
+/* pseudo slector but here it is not work so i can use internal css style */
+/* #client-section::before{
+    content: "";
+    position:absolute;
+    background: url('../food3.jpg');
+    width: 100%;
+    height: 100%;
+    
+} */
+
+#clients {
+    margin: 0px;
+    display: flex;
+
+}
+
+#clients .box {
+
+    /* border: 2px solid brown; */
+    padding: 12px;
+    margin: 7px 6px;
+    width: 70%;
+    border-radius: 23px;
+    background-color: rgb(209, 207, 207);
+    /* margin-bottom: 20px; */
+}
+
+#clients .box img {
+    height: 156px;
+    display: block;
+    margin: auto;
+
+}
+
+#clients .box img:hover {
+    height: 300px;
+
+}
+
+/* #clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 130px;
+}
+
+#client-item {
+    padding: 34px;
+} */
+
+/* Contact-section */
+#contact {
+    position: relative;
+}
+
+/* Pricsing */
+
+#pricsing-container {
+    background: black;
+}
+
+#pricsing {
+    margin: 0px;
+    display: flex;
+
+}
+
+#pricsing .box {
+    /* border: 2px solid brown; */
+    padding: 12px;
+    margin: 7px 6px;
+    width: 70%;
+    border-radius: 6px;
+    background-color: rgb(218 209 209);
+    /* margin-bottom: 20px; */
+}
+
+
+
+#pricsing .box h2 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#pricsing .box h3 {
+    font-size: 12px;
+    margin-top: -24px;
+}
+
+#pricsing .box h4 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: -2px 2px darkgrey;
+}
+
+#pricsing .box li {
+    list-style: none;
+    text-align: center;
+    margin: 12px;
+
+}
+
+
+.btn2 {
+    margin: 15px;
+    padding: 8px;
+    border: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(112, 180, 9);
+    color: rgb(11, 11, 21);
+
+}
+
+/* pseudo selector here it is not work  */
+/* #contact::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height:100% ;
+     z-index: -1;
+     opacity: 0.4;
+     background: url('img/contect.jpg');
+} */
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 77px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#contact-box input   {
+    font-size: 12px;
+    
+}
+
+#contact-box textarea  {
+    font-size: 12px;
+    
+}
+
+.btn {
+    padding: 2px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: #a53f2a38;
+    margin: 0px 200px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+ 
+
+ 
+/* for button animation colr changer */
+
+.btn {
+    text-align: center;
+    font-family: monospace;
+    animation: color 2s infinite linear;
+    margin-top: 32px;
+}
+
+@keyframes color {
+    0% {
+        color: orange
+    }
+
+    10% {
+        color: red
+    }
+
+    20% {
+        color: blue
+    }
+
+    30% {
+        color: blueviolet
+    }
+
+    40% {
+        color: greenyellow
+    }
+
+    50% {
+        color: navajowhite
+    }
+
+    60% {
+        color: palevioletred
+    }
+
+    70% {
+        color: pink
+    }
+
+    80% {
+        color: rgb(150, 109, 32)
+    }
+
+    90% {
+        color: rgb(0, 94, 255)
+    }
+
+    100% {
+        color: rgb(255, 0, 72)
+    }
+
+
+}
+
+
+#deliver {
+    height: 301px;
+}
+
+
+.deliver {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    /* width: 70%; */
+    border-radius: 10px;
+    margin: auto;
+    background: rgb(68, 61, 61);
+    flex-direction: column;
+}
+
+.deliver h1 {
+    padding: 10px;
+}
+
+.deliver li {
+    padding: 12px;
+    list-style: none;
+}
+
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* utility class */
+.h-primary {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* vedio section  */
+
+#vedio-section {
+    margin-bottom: 10px;
+}
+
+#vedio {
+    margin: 0px;
+    display: flex;
+
+}
+
+#vedio .box {
+    padding: 12px 0px;
+    margin: 6px 2px;
+    width: 70%;
+    border-radius: 23px;
+    background-color: rgb(209, 207, 207);
+}
+
+#vedio .box1 {
+    border: 2px solid #383232;
+    border-radius: 23px;
+    margin: 0px 57px;
+}
+
+#vedio .box .vedio {
+    align-items: center;
+    margin: 11%;
+}
+
+
+#vedio .h-primary {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    justify-content: center;
+}
+
+#vedio .box img:hover {
+    height: 300px;
+
+}
+
